@@ -1,0 +1,82 @@
+
+html { 
+  background: url(../img/combo.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+main[role=main] {
+	background: rgba(240,240,240,0.95);
+}
+
+
+/* -------------------------------- navigation ------------------------------- */
+
+nav.collapsed div:not(#menutoggle) ul {
+	display: none;
+}
+header[role=banner] .logo {
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+	color: #fff;
+}
+
+/* --------------------------------- player --------------------------------- */
+.combo-player {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+}
+
+a.cashmusic.soundplayer.inline {
+	font-size: 72px;
+	text-decoration: none;
+	color: #fff;
+}
+a.cashmusic.soundplayer.inline:hover {
+	cursor: pointer;
+}
+a.cashmusic.soundplayer.inline.stopped:after {
+	font-family: FontAwesome;
+	content: "\f04b";
+}
+
+a.cashmusic.soundplayer.inline.playing:after {
+	font-family: FontAwesome;
+	content: '\f04d';
+}
+
+
+/* ------------------------------ media queries ----------------------------- */
+
+@media screen and (min-width: 48em) {
+	nav {
+		width: 300px;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	nav.collapsed {
+		height: 100vh;
+	}
+	
+	nav.collapsed div:not(#menutoggle) ul {
+		display: block;
+	}
+
+	nav ul li {
+		display: block;
+	}
+
+	.main-wrap {
+		margin-left: 300px;
+	}
+
+
+}
